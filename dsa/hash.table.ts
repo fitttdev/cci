@@ -1,4 +1,5 @@
-export class HashTable {
+// 1. Using Array
+export class ArrayHashTable {
   private table: Array<Array<[string, any]>>;
   private size: number;
 
@@ -57,4 +58,9 @@ export class HashTable {
     }
     return hash % this.size;
   }
+}
+
+// 2. Balanced Binary Treee
+export class BalancedBTreeHashTable {
+  // Implement
 }
