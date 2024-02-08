@@ -1,5 +1,5 @@
 import { expect, test } from "bun:test";
-import { ArrayHashTable } from '../dsa/hash.table';
+import { ArrayHashTable } from '../../dsa/arrays_&_strings/hash.table';
 
 test("ArrayHashTable set method should add a key-value pair", () => {
   const arrayHashTable = new ArrayHashTable();
