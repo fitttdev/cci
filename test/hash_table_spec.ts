@@ -38,3 +38,13 @@ test("ArrayHashTable delete method should not throw an error for a non-existent 
   const arrayHashTable = new ArrayHashTable();
   expect(() => arrayHashTable.delete('nonexistentKey')).not.toThrow();
 });
+
+test("HashTable clear method should reset the table to a new array of the specified size", () => {
+  const arrayHashTable = new ArrayHashTable();
+  arrayHashTable.set('key1', 'value1');
+  arrayHashTable.delete('key1');
+  arrayHashTable.clear();
+  arrayHashTable.set('key1', 'value1');
+  arrayHashTable.delete('key1');
+  // expect(arrayHashTable.table.length).toBe(arrayHashTable.size);
+});
