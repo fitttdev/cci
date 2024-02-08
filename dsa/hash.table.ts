@@ -8,6 +8,19 @@ export class ArrayHashTable {
     this.size = size;
   }
 
+  // const table = [
+  //   [
+  //     ['key', 'value'],
+  //     ['key1', true],
+  //     ['key2', 69]
+  //   ], // bucket 1
+  //   [
+  //     ['key3', 420],
+  //   ], // bucket 2
+  // ]
+  // The reason for bucket to be of type array of arrays[key, value],
+  // is to handle collision for the keys computing to same hash code.
+
   public set(key: string, value: any): void {
     let index = this.hash(key);
 
